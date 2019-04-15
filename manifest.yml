@@ -10,6 +10,6 @@ applications:
   - cognitive-iot-iotf-service
   - cognitive-iot-cloudantNoSQLDB
   name: cognitive-iot
-  memory: 512M
+  memory: 256M
   instances: 1
   disk_quota: 1024M
