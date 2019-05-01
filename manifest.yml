@@ -1,14 +1,14 @@
 declared-services:
-  cognitive-iot-iotf-service:
+  ciot-iotf-service:
     label: iotf-service
     plan: iotf-service-free
-  cognitive-iot-cloudantNoSQLDB:
+  ciot-cloudantNoSQLDB:
     label: cloudantNoSQLDB
     plan: Lite
 applications:
 - services:
-  - cognitive-iot-iotf-service
-  - cognitive-iot-cloudantNoSQLDB
+  - ciot-iotf-service
+  - ciot-cloudantNoSQLDB
   name: cognitive-iot
   memory: 256M
   instances: 1
