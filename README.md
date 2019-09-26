@@ -5,7 +5,7 @@
 **__Skill Level__**: Intermediate
 <br>**__N.B__**: All services used in this repo are Lite plans.
 
-# [Creating a Cognitive IOT Application that Monitors Household Devices](https://developer.ibm.com/code/patterns/detect-voltage-anomalies-in-household-iot-devices/)
+# [Creating a Cognitive IOT Application that Monitors Household Devices](https://developer.ibm.com/patterns/detect-voltage-anomalies-in-household-iot-devices/)
 
 
 This Cognitive pattern demonstrates how to build a Cognitive IoT application. In cognitive IoT solutions, machine learning takes place in an edge computing architecture. Note that Edge computing means that you push computing away from the cloud or data center out towards the sensors. Computations happens on the edge gateway (e.g. Simulated Raspberry Pi in this scenario) near the sensors and actors. Let's use a simple scenario for illustration. Assume that you have a Washing Machine with 3 sensors.
@@ -26,7 +26,7 @@ One can use the sensors to monitor the washing machine for any abnormalities for
 2. [**Node-RED Edge (Node-RED running on your device)**](https://github.com/IBM/CognitiveIoT/tree/master/node-red): edge means "it's near the device" which one manages; in this case that is the simulated Raspberry Pi; therefore it is called Node Red on the edge. Imagine the Raspberry Pi is attached to the washing machine. Data is flowing constantly from the sensors to the Raspberry Pi. The Node Red Edge (or Raspberry Pi) is hooked up to the Internet by ethernet and is streaming data to the Watson IoT Platform.
 3. **Edge model**: It's a built-in piece of code that filters and transforms values transitioned to the IoT Platform
 4. **Watson IoT Platform**: is using the MQTT Message broker. It publishes data back to the Node Red Edge (in a real world case, if it detects an anomaly, it would send a message back to the machine to deactivate its motor)
-5. [**Node-RED IBM Cloud (YOUR_APP_NAME.mybluemix.net)**](https://github.com/IBM/CognitiveIoT/tree/master/defaults): There is a second Node-RED on IBM Cloud and it is subscribing to the data coming from the IoT Platform.  
+5. [**Node-RED IBM Cloud (YOUR_APP_NAME.mybluemix.net)**](https://github.com/IBM/CognitiveIoT/tree/master/defaults): There is a second Node-RED on IBM Cloud and it is subscribing to the data coming from the IoT Platform.
 
 
 ## Included Components
@@ -59,7 +59,7 @@ Clicking on the button will automatically deploy a NodeRED data flow tool acting
 
 The `Deploy to IBM Cloud` button automates a majority of the deployment. Afterward, you need to wire up the Watson IoT Platform to your simulated device.
 
-[![](images/deploy_btm_cloud.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/CognitiveIoT)
+[![](images/deploy_btm_cloud.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/CognitiveIoT)
 
 
 1. We can see that the app is ready to be deployed, and we need to ensure that the App name, region, Organization, Space is valid before pressing 'Deploy'.
@@ -73,7 +73,7 @@ The `Deploy to IBM Cloud` button automates a majority of the deployment. Afterwa
 
 4. To see the app and services created and configured for this pattern, use the IBM Cloud dashboard. The app is named `CognitiveIoT-20170724231917178` and it is running the following services:
 
-  * [cognitive-iot-iotf-service](https://www.ibm.com/internet-of-things/platform/watson-iot-platform/)
+  * [cognitive-iot-iotf-service](https://www.ibm.com/internet-of-things/solutions/iot-platform/watson-iot-platform)
 
 B) **Go into IBM Cloud** and click on the url route associated with your application. you will be taken to the NodeRED flow editor where you can see the already deployed and running application.
 ![](images/runtheapp.png)
@@ -190,23 +190,23 @@ For alerting, it you could run a Node-RED instance from IBM Cloud like above, an
 
 Another option would be to run the dashboard on your edge devices themselves, and check per-device. This is probably less than optimal though.
 
-**Note:** This pattern was originally part of a larger tutorial which can be found [HERE](https://developer.ibm.com/code/patterns/detect-voltage-anomalies-in-household-iot-devices/).
+**Note:** This pattern was originally part of a larger tutorial which can be found [HERE](https://developer.ibm.com/patterns/detect-voltage-anomalies-in-household-iot-devices/).
 
 ## <h2>Learn more</h2>
 <ul>
-<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
-<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
+<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
+<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
 <li><strong>AI and Data Code Pattern Playlist</strong>: Bookmark our <a href="https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde" rel="nofollow">playlist</a> with all of our Code Pattern videos</li>
 <li><strong>With Watson</strong>: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? <a href="https://www.ibm.com/watson/with-watson/" rel="nofollow">Join the With Watson program</a> to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.</li>
-<li><strong>Watson Studios</strong>: Master the art of data science with IBM's <a href="https://datascience.ibm.com/" rel="nofollow">Watson Studios</a></li>
+<li><strong>Watson Studios</strong>: Master the art of data science with IBM's <a href="https://www.ibm.com/cloud/watson-studio" rel="nofollow">Watson Studios</a></li>
 <li><strong>PowerAI</strong>: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: <a href="https://www.ibm.com/ms-en/marketplace/deep-learning-platform" rel="nofollow">IBM Power Systems</a></li>
-<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://console.bluemix.net/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
-<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud-computing/bluemix/containers" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
+<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://cloud.ibm.com/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
+<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud/container-service" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
 </ul>
 
 ### License
 -----------------------
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
